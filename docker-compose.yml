@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  rtsp:
+    image: <imagename>
+    environment:
+      - RTSP_PROTOCOLS=tcp
+    ports:
+      - "8543:8554"
+      - "1936:1935"
+      - "8877:8888"
+      - "8878:8889"
+    restart: always
+
