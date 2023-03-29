@@ -1,4 +1,4 @@
-FROM aler9/rtsp-simple-server AS rtsp
+FROM aler9/rtsp-simple-server as rtsp
 FROM alpine:3.14
 RUN apk add --no-cache ffmpeg
 COPY --from=rtsp /rtsp-simple-server /
