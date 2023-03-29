@@ -15,7 +15,7 @@ You can create a rtsp server in docker for live streaming by executing following
 5. If you want to stream an IP camera you can do the same by making changes in stream.sh file.
 you just have to add this command in stream.sh
 
-ffmpeg -re -i rtsp://username:password@ip_address:port/cam/realmonitor?channel=1&subtype=0 -c copy -f rtsp rtsp://10.20.20.231:8543/video
+ffmpeg -re -i rtsp://username:password@ip_address:port/cam/realmonitor?channel=1&subtype=0 -c copy -f rtsp rtsp://localhost:8543/video
 
 ###
 In this command, you need to replace username, password, ip_address, and port with the actual values of your IP camera. 
