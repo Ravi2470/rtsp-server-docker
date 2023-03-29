@@ -3,7 +3,7 @@ You can create a rtsp server in docker for live streaming by executing following
 
 1.Clone or fork this repository
 
-2.docker build -t <imagename> -f Dockerfile1y .
+2.docker build -t <imagename> .
 
 3.You can setup rtsp server in two ways:
 
